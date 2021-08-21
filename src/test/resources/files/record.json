@@ -1,0 +1,23 @@
+{
+  "request_id": "ewrw r43543v354b534",
+  "notification_type": "generic:transactional",
+  "delivery_channels": [
+    "email"
+  ],
+  "received_time": "2020-12-06T05:41:11.582882Z",
+  "published_time": "2020-12-06T05:41:11.582856Z",
+  "start_time": "2020-12-06T05:41:11.582280Z",
+  "end_time": "2020-12-06T05:41:11.581271Z",
+  "sender_user_id": "sendid-01",
+  "recipient_user_id": "B9093092334",
+  "recipient_email_address": "test-sender@nike.com",
+  "locale_language": "en_US",
+  "locale_country": "US",
+  "content": {
+    "cpCode": "chees-commid-0002",
+    "senderName": "Nike",
+    "senderEmail": "test-sender@nike.com",
+    "comm_id": "chees-id-0001",
+    "email": "{\"rendered_output\":\"Not sure if this is supposed to be base64\",\"subject\":\"This is the subject of the day\"}"
+  }
+}

@@ -1,0 +1,123 @@
+[
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "processed",
+    "id": "30000",
+    "send_at": 0,
+    "sg_event_id": "cHJvY2Vzc2VkLTEyMDAxNDgyLUt1ZHFEVW8tUVg2bGxRSHJteHpNRVEtMA",
+    "sg_message_id": "KudqDUo-QX6llQHrmxzMEQ.filterdrecv-66dddc765f-mbf8r-1-60F38A19-27.0",
+    "smtp-id": "<KudqDUo-QX6llQHrmxzMEQ@geopod-ismtpd-3-0>",
+    "timestamp": 1626573337
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "delivered",
+    "id": "30000",
+    "ip": "168.245.64.230",
+    "response": "250 2.0.0 OK  1626573338 r9si15457369edq.454 - gsmtp",
+    "sg_event_id": "ZGVsaXZlcmVkLTAtMTIwMDE0ODItS3VkcURVby1RWDZsbFFIcm14ek1FUS0w",
+    "sg_message_id": "KudqDUo-QX6llQHrmxzMEQ.filterdrecv-66dddc765f-mbf8r-1-60F38A19-27.0",
+    "smtp-id": "<KudqDUo-QX6llQHrmxzMEQ@geopod-ismtpd-3-0>",
+    "timestamp": 1626573338,
+    "tls": 1
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "processed",
+    "id": "30000",
+    "send_at": 0,
+    "sg_event_id": "cHJvY2Vzc2VkLTEyMDAxNDgyLVJSa09BdUFXUnB5NUJDcGNweVRSSkEtMA",
+    "sg_message_id": "RRkOAuAWRpy5BCpcpyTRJA.filterdrecv-66dddc765f-224r5-1-60F38A16-28.0",
+    "smtp-id": "<RRkOAuAWRpy5BCpcpyTRJA@geopod-ismtpd-3-0>",
+    "timestamp": 1626573335
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "delivered",
+    "id": "30000",
+    "ip": "168.245.64.230",
+    "response": "250 2.0.0 OK  1626573336 hp8si16400378ejc.333 - gsmtp",
+    "sg_event_id": "ZGVsaXZlcmVkLTAtMTIwMDE0ODItUlJrT0F1QVdScHk1QkNwY3B5VFJKQS0w",
+    "sg_message_id": "RRkOAuAWRpy5BCpcpyTRJA.filterdrecv-66dddc765f-224r5-1-60F38A16-28.0",
+    "smtp-id": "<RRkOAuAWRpy5BCpcpyTRJA@geopod-ismtpd-3-0>",
+    "timestamp": 1626573336,
+    "tls": 1
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "processed",
+    "id": "30000",
+    "send_at": 0,
+    "sg_event_id": "cHJvY2Vzc2VkLTEyMDAxNDgyLWkxbG5mY1JNUUw2d2dmUkZhcGZLTFEtMA",
+    "sg_message_id": "i1lnfcRMQL6wgfRFapfKLQ.filterdrecv-66dddc765f-fvqwd-1-60F38A1C-14.0",
+    "smtp-id": "<i1lnfcRMQL6wgfRFapfKLQ@geopod-ismtpd-3-0>",
+    "timestamp": 1626573340
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "delivered",
+    "id": "30000",
+    "ip": "168.245.64.230",
+    "response": "250 2.0.0 OK  1626573341 gq3si12268725ejb.543 - gsmtp",
+    "sg_event_id": "ZGVsaXZlcmVkLTAtMTIwMDE0ODItaTFsbmZjUk1RTDZ3Z2ZSRmFwZktMUS0w",
+    "sg_message_id": "i1lnfcRMQL6wgfRFapfKLQ.filterdrecv-66dddc765f-fvqwd-1-60F38A1C-14.0",
+    "smtp-id": "<i1lnfcRMQL6wgfRFapfKLQ@geopod-ismtpd-3-0>",
+    "timestamp": 1626573341,
+    "tls": 1
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "processed",
+    "id": "60000",
+    "send_at": 0,
+    "sg_event_id": "cHJvY2Vzc2VkLTEyMDAxNDgyLTJLb1ZKdUlZUWstNHhmZjZiOHhjTUEtMA",
+    "sg_message_id": "2KoVJuIYQk-4xff6b8xcMA.filterdrecv-574dbbbf6c-gwwcr-1-60F38B05-32.0",
+    "smtp-id": "<2KoVJuIYQk-4xff6b8xcMA@geopod-ismtpd-4-1>",
+    "timestamp": 1626573574
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "delivered",
+    "id": "60000",
+    "ip": "168.245.64.230",
+    "response": "250 2.0.0 OK  1626573574 h18si10492831qtp.403 - gsmtp",
+    "sg_event_id": "ZGVsaXZlcmVkLTAtMTIwMDE0ODItMktvVkp1SVlRay00eGZmNmI4eGNNQS0w",
+    "sg_message_id": "2KoVJuIYQk-4xff6b8xcMA.filterdrecv-574dbbbf6c-gwwcr-1-60F38B05-32.0",
+    "smtp-id": "<2KoVJuIYQk-4xff6b8xcMA@geopod-ismtpd-4-1>",
+    "timestamp": 1626573574,
+    "tls": 1
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "open",
+    "id": "60000",
+    "ip": "66.249.91.8",
+    "sg_content_type": "html",
+    "sg_event_id": "AB2eCjZYSSOKerbJry49Uw",
+    "sg_message_id": "2KoVJuIYQk-4xff6b8xcMA.filterdrecv-574dbbbf6c-gwwcr-1-60F38B05-32.0",
+    "timestamp": 1626573576,
+    "useragent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246 Mozilla/5.0"
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "open",
+    "id": "60000",
+    "ip": "66.249.84.195",
+    "sg_content_type": "html",
+    "sg_event_id": "8Ui3nlCQTXSWf2SoSfO85w",
+    "sg_message_id": "2KoVJuIYQk-4xff6b8xcMA.filterdrecv-574dbbbf6c-gwwcr-1-60F38B05-32.0",
+    "timestamp": 1626573688,
+    "useragent": "Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)"
+  },
+  {
+    "email": "chrisjlomeli@gmail.com",
+    "event": "open",
+    "id": "60000",
+    "ip": "66.249.84.201",
+    "sg_content_type": "html",
+    "sg_event_id": "VSst2x6KRwa8Fq_nshdgVw",
+    "sg_message_id": "2KoVJuIYQk-4xff6b8xcMA.filterdrecv-574dbbbf6c-gwwcr-1-60F38B05-32.0",
+    "timestamp": 1626573691,
+    "useragent": "Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)"
+  }
+]

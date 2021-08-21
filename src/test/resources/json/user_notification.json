@@ -1,0 +1,41 @@
+{
+  "request_id": "ewrw r43543v354b534",
+  "notification_type": "generic:transactional",
+  "delivery_channels": [
+    "EMAIL"
+  ],
+  "channel_properties": {
+    "push": null,
+    "inbox": null,
+    "email": {
+      "send_id": null,
+      "vendor": null,
+      "thread_id": null,
+      "collection_group_id": "collection-group-1"
+    },
+    "sms": null,
+    "wechat": null
+  },
+  "ttl": null,
+  "retention_period": null,
+  "user_notification_id": null,
+  "received_time": "2020-12-04T05:44:34.792177Z",
+  "published_time": "2020-12-04T05:44:34.792154Z",
+  "start_time": "2020-12-04T05:44:34.791566Z",
+  "end_time": "2020-12-04T05:44:34.790636Z",
+  "sender_user_id": "sendid-01",
+  "recipient_user_id": "B9093092334",
+  "recipient_mobile_number": null,
+  "recipient_email_address": "test-sender@nike.com",
+  "nuid": null,
+  "locale_language": "en_US",
+  "locale_country": "US",
+  "content": {
+    "cpCode": "chees-commid-0002",
+    "senderName": "Chris At Nike",
+    "attachments": "{\"attachment\":\"{\\\"traceId\\\": \\\"999999999\\\"}\",\"content_type\":\"text/html\",\"name\":\"unhealthy_attachments.json\",\"label\":\"ATTACHMENT-LABEL-1\"}",
+    "senderEmail": "test-sender@nike.com",
+    "comm_id": "chees-id-0001",
+    "email": "{\"rendered_output\":\"Not sure if this is supposed to be base64\",\"subject\":\"This is the subject of the day\"}"
+  }
+}

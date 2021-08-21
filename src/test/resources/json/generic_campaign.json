@@ -1,0 +1,36 @@
+{
+  "request_id": "7975d537-6c0d-49a0-b6b6-9fafc9184fe6",
+  "user_notification_id": "7975d537-6c0d-49a0-b6b6-9fafc9184fe5",
+  "notification_type": "generic:campaign",
+  "channel_properties": {
+    "email": {
+      "send_id": "7975d537-6c0d-49a0-b6b6-9fafc9184fe9",
+      "thread_id": "7975d537-6c0d-49a0-b6b6-9fafc9184fe8",
+      "collection_group_id": "d9a5bc42-4b9c-4976-858a-f159cf99c647",
+      "vendor": "ses"
+    }
+  },
+
+  "delivery_channels": [
+    "EMAIL"
+  ],
+  "recipient_user_id": "123456778",
+  "recipient_email_address": "test@nike.com",
+  "locale_language": "en",
+  "locale_country": "US",
+  "content": {
+    "cpCode": "test-code",
+    "mock-mode": true,
+    "offerId": "1234567",
+    "storeId": "2345678",
+    "productCategory": "Training Apparels",
+    "commId": "test-commId",
+    "senderEmail": "nike@test-notifications.nike.com",
+    "senderName": "test",
+    "post_id": "post_id",
+    "email": {
+      "subject": "test-subject",
+      "rendered_output": "test-body"
+    }
+  }
+}
