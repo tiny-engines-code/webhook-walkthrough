@@ -1,7 +1,5 @@
-package com.chrislomeli.servicetemplate.writers.kafka;
+package com.chrislomeli.sendgridmail.service.kafka;
 
-import com.chrislomeli.servicetemplate.model.EventsResponse;
-import com.chrislomeli.servicetemplate.service.Writer;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,41 +10,40 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
 
 @Service
 @Slf4j
-public class KafkaWriter implements Writer {
+public class KafkaWriter  {
 
-  @Value("${topic.name:events}")
-  private String TOPIC;
+  @Value("${topic.name:sendgrid_events}")
+  private String topic;
 
-  private final KafkaTemplate<String, EventsResponse> kafkaTemplate;
+  private final KafkaTemplate<String, Object> kafkaTemplate;
 
-  public KafkaWriter(KafkaTemplate<String, EventsResponse> kafkaTemplate) {
+  public KafkaWriter(KafkaTemplate<String, Object> kafkaTemplate) {
     this.kafkaTemplate = kafkaTemplate;
   }
 
-  static class KafkaCallback implements ListenableFutureCallback<SendResult<String, EventsResponse>> {
+  static class KafkaCallback implements ListenableFutureCallback<SendResult<String, Object>> {
     @Override
     public void onFailure(Throwable ex) {
-      log.error("FFOBAR: {}", ex.getLocalizedMessage());
+      log.error("FOOBAR-DLQ: {}", ex.getLocalizedMessage());
     }
 
     @Override
-    public void onSuccess(SendResult<String, EventsResponse> result) {
+    public void onSuccess(SendResult<String, Object> result) {
+      if (result == null ) return;
       RecordMetadata meta = result.getRecordMetadata();
       log.debug("Delivered {}<--[{}] at partition={}, offset={}", meta.topic(), result.toString(), meta.partition(), meta.offset());
     }
   }
 
-  @Override
-  public EventsResponse write(EventsResponse eventsResponse) {
+
+  public void write(Object Object) {
 
     try {
-      var future = this.kafkaTemplate.send(this.TOPIC, eventsResponse);
+      var future = this.kafkaTemplate.send(this.topic, Object);
       future.addCallback(new KafkaCallback());
 
-      return eventsResponse;
     } catch (Exception e) {
     }
 
-    return eventsResponse;
   }
 }

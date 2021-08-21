@@ -26,6 +26,7 @@ repositories {
 ext {
     set('springCloudVersion', "2020.0.3")
     set('amazonVersion' , '1.11.784')
+    set('mockitoVersion', "3.11.2")
 }
 
 dependencyManagement {
@@ -35,7 +36,8 @@ dependencyManagement {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter-web'
+//    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
     implementation 'org.springframework.kafka:spring-kafka'
 
     //-----------Spring cloud --------------------------------
@@ -43,6 +45,14 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-stream-binder-kafka'
     testImplementation 'org.springframework.cloud:spring-cloud-stream-test-support'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    testImplementation 'org.springframework.kafka:spring-kafka-test'
+
+    testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
+    testImplementation 'org.springframework.restdocs:spring-restdocs-webtestclient'
+    testImplementation 'org.springframework.restdocs:spring-restdocs-restassured'
+    testImplementation 'com.github.tomakehurst:wiremock-jre8-standalone'
+    testImplementation 'io.rest-assured:rest-assured'
 
 
 //    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.11'
@@ -52,8 +62,12 @@ dependencies {
 //    implementation group: 'com.sendgrid', name: 'sendgrid-java', version: '4.7.0'
 //    implementation group: 'javax.mail', name: 'javax.mail-api', version: '1.6.2'
 //    implementation group: 'commons-io', name: 'commons-io', version: '2.4'
+    testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: "${mockitoVersion}"
+    testImplementation group: 'org.mockito', name: 'mockito-core', version: "${mockitoVersion}"
+    testImplementation group: 'org.hamcrest', name: 'hamcrest', version: '2.2'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.20.2'
 
-    testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: '3.6.28'
+
 
 
 

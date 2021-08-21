@@ -1,6 +1,5 @@
-package com.chrislomeli.servicetemplate.writers.kafka;
+package com.chrislomeli.sendgridmail.service.kafka;
 
-import com.chrislomeli.servicetemplate.model.EventsResponse;
 import org.apache.kafka.clients.CommonClientConfigs;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.config.SaslConfigs;
@@ -35,7 +34,7 @@ public class ProducerConfiguration {
     private String token_url;
 
     @Bean
-    public ProducerFactory<String, EventsResponse> producerFactory() throws ClassNotFoundException {
+    public ProducerFactory<String, Object> producerFactory() throws ClassNotFoundException {
         Map<String, Object> clientProperties = new HashMap<>();
         clientProperties.put(ProducerConfig.CLIENT_ID_CONFIG, "appid");
         clientProperties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
@@ -66,7 +65,7 @@ public class ProducerConfiguration {
     }
 
     @Bean
-    public KafkaTemplate<String, EventsResponse> kafkaTemplate() throws ClassNotFoundException {
+    public KafkaTemplate<String, Object> kafkaTemplate() throws ClassNotFoundException {
         return new KafkaTemplate<>(producerFactory());
     }
 
