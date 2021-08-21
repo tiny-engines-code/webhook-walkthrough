@@ -1,4 +1,4 @@
-package com.chrislomeli.sendgridmail.service.kafka;
+package com.chrislomeli.eventactivity.service.kafka;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.RecordMetadata;

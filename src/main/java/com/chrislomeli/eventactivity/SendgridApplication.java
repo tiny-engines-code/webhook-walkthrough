@@ -1,6 +1,6 @@
-package com.chrislomeli.sendgridmail;
+package com.chrislomeli.eventactivity;
 
-import com.chrislomeli.sendgridmail.service.SendgridHandler;
+import com.chrislomeli.eventactivity.controller.SendgridHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,16 +15,6 @@ import org.springframework.web.reactive.function.server.ServerResponse;
 @EnableAsync
 @Slf4j
 public class SendgridApplication  {
-
-    @Configuration
-    static class SendgridRouter {
-        @Bean
-        public RouterFunction<ServerResponse> route(SendgridHandler handler) {
-            return RouterFunctions.route()
-                    .POST("/events", handler::eventHandler)
-                    .build();
-        }
-    }
 
     public static void main(String[] args) {
         SpringApplication.run(SendgridApplication.class, args);

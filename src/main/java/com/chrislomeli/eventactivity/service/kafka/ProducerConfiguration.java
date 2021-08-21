@@ -1,4 +1,4 @@
-package com.chrislomeli.sendgridmail.service.kafka;
+package com.chrislomeli.eventactivity.service.kafka;
 
 import org.apache.kafka.clients.CommonClientConfigs;
 import org.apache.kafka.clients.producer.ProducerConfig;

@@ -1,3 +1,7 @@
+.DS_Store
+.idea/
+full_stack/
+
 # Compiled class file
 *.class
 

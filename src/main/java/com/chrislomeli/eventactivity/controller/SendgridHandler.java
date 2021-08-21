@@ -1,6 +1,6 @@
-package com.chrislomeli.sendgridmail.service;
+package com.chrislomeli.eventactivity.controller;
 
-import com.chrislomeli.sendgridmail.service.kafka.KafkaWriter;
+import com.chrislomeli.eventactivity.service.kafka.KafkaWriter;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
