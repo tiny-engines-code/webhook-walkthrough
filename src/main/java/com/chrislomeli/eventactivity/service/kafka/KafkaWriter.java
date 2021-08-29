@@ -21,6 +21,9 @@ public class KafkaWriter  {
     this.kafkaTemplate = kafkaTemplate;
   }
 
+/**
+ * KafkaCallback
+ *  Our callback from the Kafka Producer */
   static class KafkaCallback implements ListenableFutureCallback<SendResult<String, Object>> {
     @Override
     public void onFailure(Throwable ex) {
@@ -35,15 +38,16 @@ public class KafkaWriter  {
     }
   }
 
-
+  /*
+   * Write to the Spring kafka producer
+   *  the real producer is wrapped by our KafkaTemplate bean
+   *  Our callback from the Kafka Producer */
   public void write(Object Object) {
-
     try {
       var future = this.kafkaTemplate.send(this.topic, Object);
       future.addCallback(new KafkaCallback());
 
     } catch (Exception e) {
     }
-
   }
 }

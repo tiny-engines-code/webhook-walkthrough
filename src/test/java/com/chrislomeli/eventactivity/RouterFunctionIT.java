@@ -50,7 +50,7 @@ import static org.springframework.restdocs.webtestclient.WebTestClientRestDocume
 @ComponentScan
 @WebFluxTest(
         controllers = {
-                SendgridApplication.class
+                EventActivityApplication.class
         })
 class RouterFunctionIT {
 

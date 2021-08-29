@@ -7,9 +7,9 @@ import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
 @Configuration
-public class SendgridRouter {
+public class EventRouter {
     @Bean
-    public RouterFunction<ServerResponse> route(SendgridHandler handler) {
+    public RouterFunction<ServerResponse> route(EventHandler handler) {
         return RouterFunctions.route()
                 .POST("/events", handler::eventHandler)
                 .build();

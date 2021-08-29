@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @Component
 @EnableAsync
-public class SendgridHandler {
+public class EventHandler {
 
     @Value("${sendgrid.batchsize.max:50}")
     int chunkSize;
@@ -37,7 +37,7 @@ public class SendgridHandler {
         objectMapper.registerModule(new JavaTimeModule());
     }
 
-    public SendgridHandler(KafkaWriter writer) {
+    public EventHandler(KafkaWriter writer) {
         this.writer = writer;
     }
 
@@ -71,8 +71,5 @@ public class SendgridHandler {
         } catch (Exception ignore) {
             // todo - forward failures to re-queue
         }
-
     }
-
-
 }
